@@ -1,0 +1,65 @@
+{
+  "run_at": "2026-11-18T15:44:43+00:00",
+  "sources": {
+    "DarGlobal": {
+      "sitemap_urls_in_scope": 93,
+      "snapshot_stats": {
+        "pages_seen": 0,
+        "parsed": 0,
+        "skipped_challenge": 0,
+        "skipped_duplicate": 0,
+        "skipped_out_of_scope": 0,
+        "errors": 0
+      },
+      "records": 0,
+      "coverage_of_sitemap_scope": "0/93",
+      "by_page_type": {},
+      "fields_present": {
+        "description": 0,
+        "location": 0,
+        "country": 0,
+        "property_type": 0,
+        "price": 0,
+        "payment_plan": 0,
+        "bedrooms": 0,
+        "area_sqm": 0,
+        "amenities": 0,
+        "features": 0
+      }
+    },
+    "Wasalt": {
+      "sitemap_listings_total": 59998,
+      "sitemap_listings_sampled": 314,
+      "aggregate_documents": 2,
+      "snapshot_stats": {
+        "pages_seen": 0,
+        "parsed": 0,
+        "skipped_challenge": 0,
+        "skipped_duplicate": 0,
+        "skipped_out_of_scope": 0,
+        "errors": 0
+      },
+      "snapshot_records": 0,
+      "records": 316,
+      "fields_present": {
+        "description": 314,
+        "location": 0,
+        "country": 316,
+        "property_type": 314,
+        "price": 0,
+        "payment_plan": 0,
+        "bedrooms": 153,
+        "area_sqm": 199,
+        "amenities": 0,
+        "features": 0
+      }
+    }
+  },
+  "cleaning": {
+    "input": 316,
+    "empty": 0,
+    "duplicate": 0,
+    "output": 316
+  },
+  "documents": 316
+}
