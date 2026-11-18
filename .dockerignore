@@ -10,3 +10,4 @@ data/raw/html
 data/chroma_db
 *.md
 !README.md
+data/raw

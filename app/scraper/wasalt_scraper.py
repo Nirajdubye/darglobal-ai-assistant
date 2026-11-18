@@ -120,7 +120,7 @@ class WasaltScraper(BaseScraper):
                     .apply(lambda g: g.sample(min(len(g), sample_per_group), random_state=seed)))
         out = []
         for r in sample.itertuples():
-            f = r._asdict()
+            f = {k: _clean_value(v) for k, v in r._asdict().items()}
             specs = {k: str(f[k]) for k in ("listing_id", "facing", "street_width_m") if f.get(k) is not None and not pd.isna(f[k])}
             out.append(PropertyRecord(
                 url=r.url, source=self.source, title=slug_title(f), page_type="listing",
@@ -274,6 +274,16 @@ class WasaltScraper(BaseScraper):
             baths = found.get("bathrooms") or found.get("bathroom")
             if baths and not rec.bathrooms and isinstance(baths[0], (int, str)):
                 rec.bathrooms = str(baths[0])
+
+
+def _clean_value(v):
+    """pandas NaN -> None, whole floats (from NaN-containing int columns) -> int."""
+    if isinstance(v, float):
+        if pd.isna(v):
+            return None
+        if v.is_integer():
+            return int(v)
+    return v
 
 
 def _find_keys(obj, keys: set[str], out: dict | None = None, depth: int = 0) -> dict:

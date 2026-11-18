@@ -1,0 +1,39 @@
+services:
+  api:
+    build: .
+    image: realestate-rag:latest
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    env_file:
+      - path: .env
+        required: false   # holds OPENROUTER_API_KEY; never baked into the image
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/app/data/chroma_db   # persists the vector index across restarts
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/health"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 3
+    restart: unless-stopped
+
+  ui:
+    image: realestate-rag:latest
+    command: ["streamlit", "run", "app/frontend/streamlit_app.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8501/_stcore/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  chroma_data:

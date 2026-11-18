@@ -1,43 +1,44 @@
 # Task Checklist
 
-Legend: [x] done · [ ] todo · [~] in progress · [!] blocked
+Legend: [x] done · [ ] todo · [~] in progress · [!] blocked (needs user)
 
 ## Phase 0 — Discovery
-- [x] Inspect workspace (no existing project; Python 3.12, Docker 29, Compose 2.40 available)
-- [x] robots.txt both sites
-- [x] Sitemaps both sites (DG 480 URLs; Wasalt 60k listing URLs on CDN)
-- [x] Rendering / protection check (DG: Imperva; Wasalt: Cloudflare — both block plain HTTP)
-- [x] website_research.md, architecture.md, implementation_plan.md
-- [!] User approval of data-collection approach
-- [ ] OpenRouter key in `.env` (user)
-- [ ] Hosting account (user)
+- [x] Workspace, robots.txt, sitemaps, protection check, research docs
+- [x] Approach A + B approved (2026-11-18)
 
 ## Phase 1 — Skeleton
-- [ ] Folder structure, config, requirements, .env.example, .gitignore, .dockerignore, git init
+- [x] Structure, config (free-model guard), requirements, .env.example, .gitignore, .dockerignore, git init
 
 ## Phase 2–4 — Scraping & processing (P0)
-- [ ] Base fetcher (robots, rate limit, retries, timeouts, de-dup, challenge detection)
-- [ ] Sitemap parsers
-- [ ] Browser capture of DG pages
-- [ ] Browser capture of Wasalt listings
-- [ ] DG parser · [ ] Wasalt parser
-- [ ] Cleaner, de-dup, raw vs processed JSON, scraping summary
+- [x] Polite fetcher (robots, 2 s rate limit, retries w/ backoff, timeouts, de-dup, challenge detection)
+- [x] Sitemap parsers (DarGlobal XML, Wasalt gzip)
+- [x] DarGlobal parser (snapshot-based) · [x] Wasalt slug + page parser
+- [x] Wasalt sitemap data collected LIVE: 59,998 listings → 314 sampled listing docs + 2 aggregate docs
+- [x] Data-quality handling: implausible areas excluded (documented), odd slug variants parsed
+- [x] Snapshot receiver for browser capture (`scripts/snapshot_receiver.py`)
+- [!] DarGlobal page capture in real browser (93 in-scope URLs in `data/raw/darglobal_urls.json`)
+- [ ] Optional: Wasalt listing page snapshots (adds price/city)
+- [x] Cleaner, de-dup, raw vs processed JSON, scraping_summary.json
 
 ## Phase 5–6 — Index & RAG (P0)
-- [ ] Chunker · [ ] Embeddings · [ ] Chroma persistent upsert
-- [ ] Retriever · [ ] Prompt · [ ] OpenRouter generator · [ ] Chat service w/ follow-ups
+- [x] Chunker · [x] MiniLM embeddings · [x] Chroma persistent, incremental upsert, stale-chunk removal
+- [x] Retriever (threshold, source filter, follow-up rewrite) · [x] Grounded prompt · [x] OpenRouter generator · [x] Chat service
 
 ## Phase 7–8 — API & UI (P0)
-- [ ] /health /stats /chat /admin/ingest
-- [ ] Streamlit UI + disclaimer
+- [x] /health /stats /chat /admin/ingest — smoke-tested locally
+- [x] Streamlit UI (welcome, suggestions, history, spinner, sources, clear chat, disclaimer, XSS-escaped sources)
 
 ## Phase 9 — Tests (P1)
-- [ ] Unit tests (extraction, cleaning, chunking, embeddings, retrieval, generation, API, errors, sources)
-- [ ] 15+ question evaluation · [ ] test_report.md
+- [x] 51 unit/integration tests passing (incl. real embedding model)
+- [x] 15 evaluation questions (`tests/eval_questions.json`) + harness (`scripts/evaluate.py`)
+- [!] Run evaluation with real LLM (needs OPENROUTER_API_KEY) · [ ] add DarGlobal questions after capture
+- [ ] docs/test_report.md
 
 ## Phase 10–11 — Docker & deploy (P0)
-- [ ] Dockerfile, compose, healthchecks, verified locally
-- [ ] Deployed · [ ] Public URL verified externally · [ ] /health verified · [ ] chat verified
+- [x] Dockerfile (model + index baked in), start.sh, docker-compose (volume, healthchecks)
+- [x] Image build (3.1 GB) + verified: single-container (UI+API healthy, non-root) and compose (both healthy, index persists across restart)
+- [!] Hugging Face Space + secret (needs account/token)
+- [ ] Public URL verified externally · [ ] chat verified live
 
 ## Phase 12 — Docs (P1)
-- [ ] README · [ ] deployment guide
+- [x] deployment_guide.md · [ ] README.md

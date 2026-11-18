@@ -145,3 +145,11 @@ def test_wasalt_bedroom_first_slug_and_implausible_area():
     assert (f["property_type"], f["bedrooms"], f["listing_type"]) == ("apartment", 3, "rent")
     assert plausible_area("apartment", 120) and not plausible_area("apartment", 54387)
     assert plausible_area("land", 54387)
+
+
+def test_wasalt_titles_have_no_pandas_artifacts():
+    w = WasaltScraper(fetcher=MagicMock())
+    entries = [{"loc": "https://wasalt.sa/en/property/sale/villa-300-sqm-facing-south-with-4-bedrooms-1", "lastmod": "x"},
+               {"loc": "https://wasalt.sa/en/property/sale/land-500-sqm-2", "lastmod": "x"}]
+    for r in w.sitemap_listing_records(w.listings_frame(entries)):
+        assert "nan" not in r.title.lower() and ".0 " not in r.title, r.title
