@@ -47,19 +47,22 @@ class ChatService:
     @staticmethod
     def build_sources(answer: str, chunks: list[dict]) -> list[dict]:
         """Sources come from retrieval metadata (never from LLM text), cited ones first, de-duplicated by URL."""
+        if not chunks:
+            return []
         cited = {int(n) for n in re.findall(r"\[(\d+)\]", answer)}
         ordered = [c for i, c in enumerate(chunks, 1) if i in cited] + \
                   [c for i, c in enumerate(chunks, 1) if i not in cited]
         out, seen = [], set()
         for c in ordered:
-            m = c["metadata"]
-            if m["url"] in seen:
+            m = c.get("metadata", {})
+            url = m.get("url", "#")
+            if url in seen:
                 continue
-            seen.add(m["url"])
+            seen.add(url)
             idx = chunks.index(c) + 1
             out.append({
-                "title": m.get("title", ""), "url": m["url"], "source": m.get("source", ""),
-                "score": c["score"], "cited": idx in cited, "page_type": m.get("page_type", ""),
+                "title": m.get("title", ""), "url": url, "source": m.get("source", ""),
+                "score": c.get("score", 0.0), "cited": idx in cited, "page_type": m.get("page_type", ""),
                 "country": m.get("country") or None, "price": m.get("price") or None,
                 "extracted_at": m.get("extracted_at") or None,
             })
@@ -67,25 +70,74 @@ class ChatService:
 
     def answer(self, question: str, history: list[dict] | None = None) -> dict:
         started = time.perf_counter()
-        q = self.validate(question)
+        try:
+            q = self.validate(question)
+        except QueryValidationError as e:
+            return {
+                "answer": str(e),
+                "sources": [],
+                "model": None,
+                "grounded": False,
+                "latency_ms": int((time.perf_counter() - started) * 1000)
+            }
+
         history = history or []
 
         if GREETING_RE.match(q):
-            return {"answer": GREETING_ANSWER, "sources": [], "model": None, "grounded": False,
-                    "latency_ms": int((time.perf_counter() - started) * 1000)}
+            return {
+                "answer": GREETING_ANSWER,
+                "sources": [],
+                "model": None,
+                "grounded": False,
+                "latency_ms": int((time.perf_counter() - started) * 1000)
+            }
 
-        chunks = self.retriever.retrieve(q, history)
+        # 1. Retrieve with auto-recovery
+        try:
+            chunks = self.retriever.retrieve(q, history)
+        except Exception as e:
+            logger.exception("Initial retrieval failed: %s; trying connection reset...", e)
+            try:
+                self.retriever.index.reset_connection()
+                chunks = self.retriever.retrieve(q, history)
+            except Exception as e2:
+                logger.exception("Fallback retrieval also failed: %s", e2)
+                chunks = []
+
         if not chunks:
             logger.info("No relevant context for question: %r", q[:120])
-            return {"answer": NO_INFO_ANSWER, "sources": [], "model": None, "grounded": False,
-                    "latency_ms": int((time.perf_counter() - started) * 1000)}
+            return {
+                "answer": NO_INFO_ANSWER,
+                "sources": [],
+                "model": None,
+                "grounded": False,
+                "latency_ms": int((time.perf_counter() - started) * 1000)
+            }
 
-        messages = build_messages(q, chunks, history, self.settings.history_turns)
-        gen = self.generator.generate(messages)
-        return {
-            "answer": gen.text,
-            "sources": self.build_sources(gen.text, chunks),
-            "model": gen.model,
-            "grounded": True,
-            "latency_ms": int((time.perf_counter() - started) * 1000),
-        }
+        # 2. Generate answer via OpenRouter
+        try:
+            messages = build_messages(q, chunks, history, self.settings.history_turns)
+            gen = self.generator.generate(messages)
+            return {
+                "answer": gen.text,
+                "sources": self.build_sources(gen.text, chunks),
+                "model": gen.model,
+                "grounded": True,
+                "latency_ms": int((time.perf_counter() - started) * 1000),
+            }
+        except Exception as e:
+            logger.exception("LLM generation error: %s", e)
+            # Graceful summary from retrieved chunks
+            titles = [c["metadata"].get("title", "") for c in chunks[:3] if c.get("metadata", {}).get("title")]
+            snippet = ", ".join(titles) if titles else "luxury developments"
+            fallback = (
+                f"Based on the collected property data, relevant records include {snippet}. "
+                "However, there was a temporary delay generating the full response. Please try asking again."
+            )
+            return {
+                "answer": fallback,
+                "sources": self.build_sources("", chunks),
+                "model": None,
+                "grounded": True,
+                "latency_ms": int((time.perf_counter() - started) * 1000),
+            }

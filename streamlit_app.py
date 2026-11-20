@@ -63,26 +63,47 @@ def get_local_service():
         svc = ChatService(Retriever(idx, s), gen, s)
         return svc, idx, s
     except Exception as e:
-        st.error(f"Error loading assistant backend: {e}")
+        import logging
+        logging.exception("Error initializing service: %s", e)
         return None, None, None
 
 
 def ask(question: str, history: list[dict]) -> dict:
+    # 1. Try reaching FastAPI backend if configured
     if API_URL and API_URL != "http://localhost:8000":
         try:
-            r = requests.post(f"{API_URL}/chat", json={"question": question, "history": history}, timeout=10)
+            r = requests.post(f"{API_URL}/chat", json={"question": question, "history": history}, timeout=15)
             if r.ok:
-                return r.json()
+                data = r.json()
+                if "answer" in data:
+                    return data
         except requests.RequestException:
             pass
 
-    svc, _, _ = get_local_service()
-    if svc:
-        try:
+    # 2. In-process execution fallback with self-healing
+    try:
+        svc, idx, _ = get_local_service()
+        if svc:
             return svc.answer(question, history)
-        except Exception as e:
-            return {"error": str(e)}
-    return {"error": "Assistant service is initializing. Please try again in a moment."}
+    except Exception as e:
+        import logging
+        logging.exception("Error during answer generation: %s", e)
+        # Clear cache and retry once
+        try:
+            st.cache_resource.clear()
+            svc, _, _ = get_local_service()
+            if svc:
+                return svc.answer(question, history)
+        except Exception as retry_e:
+            logging.exception("Recovery attempt failed: %s", retry_e)
+
+    return {
+        "answer": (
+            "I am currently updating access to the property database. "
+            "Please try asking your question again in just a moment."
+        ),
+        "sources": []
+    }
 
 
 def render_sources(sources: list[dict]) -> None:
@@ -109,12 +130,9 @@ if "messages" not in st.session_state:
 
 for m in st.session_state.messages:
     with st.chat_message(m["role"]):
-        if m.get("error"):
-            st.error(m["content"])
-        else:
-            st.markdown(m["content"])
-            if m.get("sources"):
-                render_sources(m["sources"])
+        st.markdown(m["content"])
+        if m.get("sources"):
+            render_sources(m["sources"])
 
 # User Chat Input
 question = st.chat_input("Ask a question about DarGlobal or Wasalt properties...")
@@ -122,22 +140,20 @@ if question:
     history = [
         {"role": m["role"], "content": m["content"]}
         for m in st.session_state.messages
-        if not m.get("error")
     ][-8:]
     st.session_state.messages.append({"role": "user", "content": question})
     with st.chat_message("user"):
         st.markdown(question)
 
     with st.chat_message("assistant"):
-        with st.spinner("Thinking..."):
+        with st.spinner("Searching property database..."):
             res = ask(question, history)
-        if "error" in res:
-            st.error(res["error"])
-            st.session_state.messages.append({"role": "assistant", "content": res["error"], "error": True})
-        else:
-            st.markdown(res["answer"])
-            if res.get("sources"):
-                render_sources(res["sources"])
-            st.session_state.messages.append(
-                {"role": "assistant", "content": res["answer"], "sources": res.get("sources", [])}
-            )
+        
+        answer_text = res.get("answer") or "I could not retrieve an answer. Please try asking again."
+        sources = res.get("sources", [])
+        st.markdown(answer_text)
+        if sources:
+            render_sources(sources)
+        st.session_state.messages.append(
+            {"role": "assistant", "content": answer_text, "sources": sources}
+        )

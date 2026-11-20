@@ -24,13 +24,55 @@ logging.getLogger("chromadb.telemetry.product.posthog").setLevel(logging.CRITICA
 class VectorIndex:
     def __init__(self, persist_dir: Path, collection_name: str, embedder: Embedder | None = None,
                  embedding_model: str | None = None):
-        persist_dir.mkdir(parents=True, exist_ok=True)
-        self.client = chromadb.PersistentClient(path=str(persist_dir),
-                                                settings=ChromaSettings(anonymized_telemetry=False))
-        self.collection = self.client.get_or_create_collection(name=collection_name,
-                                                               metadata={"hnsw:space": "cosine"})
+        self.persist_dir = Path(persist_dir)
+        self.collection_name = collection_name
+        self.persist_dir.mkdir(parents=True, exist_ok=True)
         self._embedder = embedder
         self._embedding_model = embedding_model
+        self._client: chromadb.PersistentClient | None = None
+        self._collection = None
+
+    def _init_client(self):
+        self._client = chromadb.PersistentClient(
+            path=str(self.persist_dir),
+            settings=ChromaSettings(anonymized_telemetry=False)
+        )
+        self._collection = self._client.get_or_create_collection(
+            name=self.collection_name,
+            metadata={"hnsw:space": "cosine"}
+        )
+
+    @property
+    def client(self) -> chromadb.PersistentClient:
+        if self._client is None:
+            self._init_client()
+        return self._client
+
+    @property
+    def collection(self):
+        if self._collection is None:
+            self._init_client()
+        else:
+            try:
+                # Ping to verify existing handle is valid
+                _ = self._collection.count()
+            except Exception as e:
+                logger.warning("Stale collection handle detected (%s); re-fetching '%s'...", e, self.collection_name)
+                try:
+                    self._collection = self.client.get_or_create_collection(
+                        name=self.collection_name,
+                        metadata={"hnsw:space": "cosine"}
+                    )
+                except Exception:
+                    self.reset_connection()
+        return self._collection
+
+    def reset_connection(self):
+        """Force clean re-initialization of the client and collection."""
+        logger.info("Resetting ChromaDB persistent client connection for '%s'", self.collection_name)
+        self._client = None
+        self._collection = None
+        self._init_client()
 
     @property
     def embedder(self) -> Embedder:
@@ -39,7 +81,12 @@ class VectorIndex:
         return self._embedder
 
     def count(self) -> int:
-        return self.collection.count()
+        try:
+            return self.collection.count()
+        except Exception as e:
+            logger.warning("Error getting collection count: %s; re-binding...", e)
+            self.reset_connection()
+            return self.collection.count()
 
     def upsert_chunks(self, chunks: list[dict], batch_size: int = 256) -> dict:
         """Add new chunks; drop stale chunks of URLs being re-indexed. Returns stats."""
@@ -50,25 +97,27 @@ class VectorIndex:
         unique = {c["id"]: c for c in chunks}
         chunks = list(unique.values())
 
+        coll = self.collection
+
         # remove chunks belonging to these URLs that are no longer produced
         new_ids = set(unique)
         for url in {c["metadata"]["url"] for c in chunks}:
-            existing = self.collection.get(where={"url": url}, include=[])["ids"]
+            existing = coll.get(where={"url": url}, include=[])["ids"]
             stale = [i for i in existing if i not in new_ids]
             if stale:
-                self.collection.delete(ids=stale)
+                coll.delete(ids=stale)
                 stats["stale_deleted"] += len(stale)
 
         existing_ids: set[str] = set()
         ids = list(new_ids)
         for i in range(0, len(ids), 500):
-            existing_ids.update(self.collection.get(ids=ids[i:i + 500], include=[])["ids"])
+            existing_ids.update(coll.get(ids=ids[i:i + 500], include=[])["ids"])
         todo = [c for c in chunks if c["id"] not in existing_ids]
         stats["unchanged"] = len(chunks) - len(todo)
 
         for i in range(0, len(todo), batch_size):
             batch = todo[i:i + batch_size]
-            self.collection.add(
+            coll.add(
                 ids=[c["id"] for c in batch],
                 documents=[c["text"] for c in batch],
                 metadatas=[c["metadata"] for c in batch],
@@ -87,22 +136,40 @@ class VectorIndex:
         return len(gone)
 
     def query(self, embedding: list[float], top_k: int = 6, where: dict | None = None) -> list[dict]:
-        if self.count() == 0:
-            return []
-        res = self.collection.query(query_embeddings=[embedding], n_results=min(top_k, self.count()),
-                                    where=where or None, include=["documents", "metadatas", "distances"])
-        out = []
-        for doc, meta, dist in zip(res["documents"][0], res["metadatas"][0], res["distances"][0]):
-            out.append({"text": doc, "metadata": meta, "score": round(1.0 - float(dist), 4)})
-        return out
+        for attempt in range(2):
+            try:
+                cnt = self.count()
+                if cnt == 0:
+                    return []
+                res = self.collection.query(
+                    query_embeddings=[embedding],
+                    n_results=min(top_k, cnt),
+                    where=where or None,
+                    include=["documents", "metadatas", "distances"]
+                )
+                out = []
+                for doc, meta, dist in zip(res["documents"][0], res["metadatas"][0], res["distances"][0]):
+                    out.append({"text": doc, "metadata": meta, "score": round(1.0 - float(dist), 4)})
+                return out
+            except Exception as e:
+                logger.warning("Query failed on attempt %d: %s; resetting connection...", attempt, e)
+                self.reset_connection()
+                if attempt == 1:
+                    logger.error("Final query attempt failed: %s", e)
+                    return []
+        return []
 
     def stats(self) -> dict:
-        data = self.collection.get(include=["metadatas"])
-        metas = data["metadatas"]
-        return {
-            "chunks": len(metas),
-            "documents": len({m.get("doc_id") for m in metas}),
-            "by_source": dict(Counter(m.get("source") for m in metas)),
-            "by_page_type": dict(Counter(m.get("page_type") for m in metas)),
-            "countries": sorted({m.get("country") for m in metas if m.get("country")}),
-        }
+        try:
+            data = self.collection.get(include=["metadatas"])
+            metas = data["metadatas"]
+            return {
+                "chunks": len(metas),
+                "documents": len({m.get("doc_id") for m in metas}),
+                "by_source": dict(Counter(m.get("source") for m in metas)),
+                "by_page_type": dict(Counter(m.get("page_type") for m in metas)),
+                "countries": sorted({m.get("country") for m in metas if m.get("country")}),
+            }
+        except Exception as e:
+            logger.warning("Error fetching stats: %s", e)
+            return {"chunks": 0, "documents": 0, "by_source": {}, "by_page_type": {}, "countries": []}
