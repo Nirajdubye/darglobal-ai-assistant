@@ -1,4 +1,4 @@
-# CPU-only PyTorch keeps the Docker image small (no CUDA libraries).
+# CPU-only PyTorch keeps the image small (no CUDA libraries).
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.5.1
 
@@ -20,8 +20,9 @@ sentence-transformers==3.3.1
 chromadb==0.6.3
 openai==1.59.6
 
-# Frontend
+# Frontend (Streamlit + Gradio for HF Spaces)
 streamlit==1.41.1
+gradio>=4.0.0
 
 # Testing
 pytest==8.3.4

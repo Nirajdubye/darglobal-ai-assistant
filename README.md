@@ -3,8 +3,8 @@ title: Real Estate RAG Assistant
 emoji: 🏛️
 colorFrom: yellow
 colorTo: gray
-sdk: docker
-app_port: 7860
+sdk: gradio
+app_file: app.py
 pinned: false
 short_description: RAG chatbot over public DarGlobal and Wasalt data
 ---
