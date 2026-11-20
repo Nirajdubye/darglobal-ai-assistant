@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     llm_timeout_seconds: float = 60.0
     llm_max_retries: int = 2
     llm_temperature: float = 0.1
-    llm_max_tokens: int = 700
+    llm_max_tokens: int = 1500
 
     # --- Paths ------------------------------------------------------------
     data_dir: Path = PROJECT_ROOT / "data"

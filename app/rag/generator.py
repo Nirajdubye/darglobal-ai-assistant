@@ -96,7 +96,20 @@ class OpenRouterGenerator:
 
         if not resp.choices:
             raise LLMUnavailableError("Empty response from model")
-        text = (resp.choices[0].message.content or "").strip()
+        msg = resp.choices[0].message
+        text = (msg.content or "").strip()
+        if not text:
+            reasoning = getattr(msg, "reasoning", "") or ""
+            if not reasoning and hasattr(msg, "reasoning_details"):
+                details = getattr(msg, "reasoning_details") or []
+                reasoning = " ".join(d.get("text", "") for d in details if isinstance(d, dict))
+            if reasoning:
+                for marker in ["Drafting the response:\n", "Drafting the response:", "Response:\n", "Draft response:\n", "Final answer:\n"]:
+                    if marker in reasoning:
+                        text = reasoning.split(marker, 1)[1].strip()
+                        break
+                if not text and len(reasoning) > 40:
+                    text = reasoning.strip()
         if not text:
             raise LLMUnavailableError("Model returned no text")
         used = getattr(resp, "model", None) or self.settings.openrouter_model

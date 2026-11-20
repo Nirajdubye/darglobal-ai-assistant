@@ -43,29 +43,77 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+@st.cache_resource(show_spinner=False)
+def get_local_service():
+    try:
+        import json
+        from app.config import get_settings
+        from app.ingestion.indexing import VectorIndex
+        from app.ingestion.pipeline import build_index
+        from app.rag.generator import OpenRouterGenerator
+        from app.rag.retriever import Retriever
+        from app.services.chat_service import ChatService
+        s = get_settings()
+        idx = VectorIndex(s.chroma_dir, s.collection_name, embedding_model=s.embedding_model)
+        if idx.count() == 0 and s.documents_path.exists():
+            build_index(s, idx)
+        gen = OpenRouterGenerator(s)
+        svc = ChatService(Retriever(idx, s), gen, s)
+        return svc, idx, s
+    except Exception as e:
+        return None, None, None
+
+
 @st.cache_data(ttl=60, show_spinner=False)
 def fetch(path: str):
     try:
-        r = requests.get(f"{API_URL}{path}", timeout=10)
-        return r.json() if r.ok else None
+        r = requests.get(f"{API_URL}{path}", timeout=2)
+        if r.ok:
+            return r.json()
     except requests.RequestException:
-        return None
+        pass
+    
+    svc, idx, s = get_local_service()
+    if idx:
+        if path == "/health":
+            chunks = idx.count()
+            llm_ok = svc.generator.configured if svc else False
+            return {
+                "status": "ok" if chunks and llm_ok else "degraded",
+                "index_ready": chunks > 0,
+                "chunks": chunks,
+                "llm_configured": llm_ok,
+                "model": s.openrouter_model,
+            }
+        elif path == "/stats":
+            summary_path = s.processed_dir / "scraping_summary.json"
+            import json
+            summary = json.loads(summary_path.read_text(encoding="utf-8")) if summary_path.exists() else None
+            return {
+                **idx.stats(),
+                "embedding_model": s.embedding_model,
+                "llm_model": s.openrouter_model,
+                "scraping_summary": summary,
+            }
+    return None
 
 
 def ask(question: str, history: list[dict]) -> dict:
     try:
-        r = requests.post(f"{API_URL}/chat", json={"question": question, "history": history}, timeout=TIMEOUT)
-    except requests.Timeout:
-        return {"error": "The request timed out. Please try again."}
+        r = requests.post(f"{API_URL}/chat", json={"question": question, "history": history}, timeout=10)
+        if r.ok:
+            return r.json()
     except requests.RequestException:
-        return {"error": "Cannot reach the assistant backend. Please try again in a moment."}
-    if r.ok:
-        return r.json()
-    try:
-        detail = r.json().get("detail", r.text)
-    except ValueError:
-        detail = r.text
-    return {"error": str(detail)[:300]}
+        pass
+    
+    # In-process fallback for standalone Streamlit execution
+    svc, _, _ = get_local_service()
+    if svc:
+        try:
+            return svc.answer(question, history)
+        except Exception as e:
+            return {"error": str(e)}
+    return {"error": "Cannot reach the assistant backend. Please verify your OPENROUTER_API_KEY."}
 
 
 def render_sources(sources: list[dict]) -> None:
