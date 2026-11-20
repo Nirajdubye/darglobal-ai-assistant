@@ -32,11 +32,17 @@ if str(root) not in sys.path:
 
 API_URL = os.getenv("API_URL", "http://localhost:8000").rstrip("/")
 
-st.set_page_config(page_title="DarGlobal & Wasalt AI Assistant", page_icon="🏢", layout="wide")
+st.set_page_config(page_title="DarGlobal & Wasalt AI Assistant", page_icon="🏢", layout="wide", initial_sidebar_state="collapsed")
 
-# Standard clean developer UI
-st.title("DarGlobal & Wasalt AI Assistant")
-st.caption("RAG chatbot for DarGlobal luxury developments and Wasalt properties")
+# Top header with Title and Clear Chat
+col_title, col_btn = st.columns([6, 1])
+with col_title:
+    st.title("DarGlobal & Wasalt AI Assistant")
+with col_btn:
+    st.write("")
+    if st.button("Clear Chat", use_container_width=True):
+        st.session_state.messages = []
+        st.rerun()
 
 
 @st.cache_resource(show_spinner=False)
@@ -91,18 +97,9 @@ def render_sources(sources: list[dict]) -> None:
             st.markdown(f"- **[{source_name}]** [{esc(title)}]({esc(url)})")
 
 
-# Sidebar
+# Sidebar (minimal)
 with st.sidebar:
-    st.header("Project Info")
-    svc, idx, s = get_local_service()
-    if idx:
-        st.success(f"Index Ready ({idx.count()} chunks)")
-        st.write(f"**Model:** `{s.openrouter_model}`")
-    else:
-        st.warning("Connecting to index...")
-
-    st.divider()
-    if st.button("Clear Chat", use_container_width=True):
+    if st.button("🗑️ Clear Chat", use_container_width=True, key="sidebar_clear"):
         st.session_state.messages = []
         st.rerun()
 
