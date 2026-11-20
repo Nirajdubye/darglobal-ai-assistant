@@ -3,8 +3,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-data/chroma_db/*
-!data/chroma_db/.gitkeep
 data/raw/html/*.html
 .streamlit/secrets.toml
 *.log

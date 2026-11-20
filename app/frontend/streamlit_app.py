@@ -1,11 +1,34 @@
-"""Streamlit chat UI. Talks to the FastAPI backend only - it never sees the OpenRouter key."""
+"""Streamlit chat UI for DarGlobal & Wasalt Real Estate AI Assistant."""
 from __future__ import annotations
 
 import html
 import os
+import sys
+from pathlib import Path
+
+# Fix for ChromaDB SQLite requirement on Linux (Streamlit Community Cloud)
+try:
+    __import__("pysqlite3")
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+except ImportError:
+    pass
 
 import requests
 import streamlit as st
+
+# Forward Streamlit secrets to environment variables so Settings sees OPENROUTER_API_KEY
+try:
+    if hasattr(st, "secrets"):
+        for k, v in st.secrets.items():
+            if isinstance(v, str) and k not in os.environ:
+                os.environ[k] = v
+except Exception:
+    pass
+
+# Ensure project root in sys.path
+root = Path(__file__).resolve().parent.parent.parent
+if str(root) not in sys.path:
+    sys.path.insert(0, str(root))
 
 API_URL = os.getenv("API_URL", "http://localhost:8000").rstrip("/")
 TIMEOUT = 120
@@ -13,7 +36,7 @@ TIMEOUT = 120
 SUGGESTED = [
     "Which countries does DarGlobal have projects in?",
     "Tell me about DarGlobal's branded residences with luxury partners.",
-    "What DarGlobal projects are available in Oman?",
+    "What DarGlobal projects are available in Dubai and Oman?",
     "How many properties are listed on Wasalt for rent vs for sale?",
     "What is the typical size of a villa listed on Wasalt?",
     "Which Saudi cities does Wasalt cover?",
@@ -43,16 +66,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-@st.cache_resource(show_spinner=False)
+@st.cache_resource(show_spinner="Loading RAG knowledge base & models...")
 def get_local_service():
     try:
-        import json
         from app.config import get_settings
         from app.ingestion.indexing import VectorIndex
         from app.ingestion.pipeline import build_index
         from app.rag.generator import OpenRouterGenerator
         from app.rag.retriever import Retriever
         from app.services.chat_service import ChatService
+
         s = get_settings()
         idx = VectorIndex(s.chroma_dir, s.collection_name, embedding_model=s.embedding_model)
         if idx.count() == 0 and s.documents_path.exists():
@@ -61,20 +84,24 @@ def get_local_service():
         svc = ChatService(Retriever(idx, s), gen, s)
         return svc, idx, s
     except Exception as e:
+        import logging
+        logging.exception("Error in get_local_service")
+        st.error(f"Failed to initialize local service: {e}")
         return None, None, None
 
 
 @st.cache_data(ttl=60, show_spinner=False)
 def fetch(path: str):
-    try:
-        r = requests.get(f"{API_URL}{path}", timeout=2)
-        if r.ok:
-            return r.json()
-    except requests.RequestException:
-        pass
-    
+    if API_URL and API_URL != "http://localhost:8000":
+        try:
+            r = requests.get(f"{API_URL}{path}", timeout=2)
+            if r.ok:
+                return r.json()
+        except requests.RequestException:
+            pass
+
     svc, idx, s = get_local_service()
-    if idx:
+    if idx and s:
         if path == "/health":
             chunks = idx.count()
             llm_ok = svc.generator.configured if svc else False
@@ -86,8 +113,8 @@ def fetch(path: str):
                 "model": s.openrouter_model,
             }
         elif path == "/stats":
-            summary_path = s.processed_dir / "scraping_summary.json"
             import json
+            summary_path = s.processed_dir / "scraping_summary.json"
             summary = json.loads(summary_path.read_text(encoding="utf-8")) if summary_path.exists() else None
             return {
                 **idx.stats(),
@@ -99,21 +126,21 @@ def fetch(path: str):
 
 
 def ask(question: str, history: list[dict]) -> dict:
-    try:
-        r = requests.post(f"{API_URL}/chat", json={"question": question, "history": history}, timeout=10)
-        if r.ok:
-            return r.json()
-    except requests.RequestException:
-        pass
-    
-    # In-process fallback for standalone Streamlit execution
+    if API_URL and API_URL != "http://localhost:8000":
+        try:
+            r = requests.post(f"{API_URL}/chat", json={"question": question, "history": history}, timeout=10)
+            if r.ok:
+                return r.json()
+        except requests.RequestException:
+            pass
+
     svc, _, _ = get_local_service()
     if svc:
         try:
             return svc.answer(question, history)
         except Exception as e:
             return {"error": str(e)}
-    return {"error": "Cannot reach the assistant backend. Please verify your OPENROUTER_API_KEY."}
+    return {"error": "Cannot reach the assistant backend. Please verify your OPENROUTER_API_KEY in Streamlit Secrets."}
 
 
 def render_sources(sources: list[dict]) -> None:
@@ -131,7 +158,8 @@ def render_sources(sources: list[dict]) -> None:
                 f"<div class='src'>{badge}<a href='{esc(url, quote=True)}' target='_blank' rel='noopener'>{esc(s['title'])}</a><br>"
                 f"<small>{extra + ' · ' if extra else ''}relevance {s['score']:.2f}{cited}"
                 f"{' · collected ' + date if date else ''}</small></div>",
-                unsafe_allow_html=True)
+                unsafe_allow_html=True,
+            )
 
 
 # ---------------- sidebar ----------------
@@ -144,9 +172,9 @@ with st.sidebar:
         st.markdown(f"**Status:** {'🟢 Online' if ok else '🟠 Degraded'}")
         st.caption(f"{health['chunks']:,} indexed chunks · model `{health['model']}`")
     else:
-        st.markdown("**Status:** 🔴 Backend unreachable")
+        st.markdown("**Status:** 🔴 Initializing")
     stats = fetch("/stats")
-    if stats:
+    if stats and "by_source" in stats:
         cols = st.columns(2)
         for i, (src, n) in enumerate(sorted(stats["by_source"].items())):
             cols[i % 2].metric(f"{src} chunks", f"{n:,}")
@@ -156,14 +184,19 @@ with st.sidebar:
     if st.button("🗑️ Clear chat", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
-    st.markdown("<p class='disclaimer'>Independent technical demonstration built for a job application. "
-                "Not affiliated with, endorsed by, or operated by DarGlobal or Wasalt. Information may be "
-                "outdated - always verify on the official websites.</p>", unsafe_allow_html=True)
+    st.markdown(
+        "<p class='disclaimer'>Independent technical demonstration built for a job application. "
+        "Not affiliated with, endorsed by, or operated by DarGlobal or Wasalt. Information may be "
+        "outdated - always verify on the official websites.</p>",
+        unsafe_allow_html=True,
+    )
 
 # ---------------- main ----------------
-st.markdown("<div class='hero'><h1>Real Estate <span class='gold'>AI</span> Assistant</h1>"
-            "<p>DarGlobal projects &amp; Wasalt listings — answers grounded in public website data</p></div>",
-            unsafe_allow_html=True)
+st.markdown(
+    "<div class='hero'><h1>Real Estate <span class='gold'>AI</span> Assistant</h1>"
+    "<p>DarGlobal projects &amp; Wasalt listings — answers grounded in public website data</p></div>",
+    unsafe_allow_html=True,
+)
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -190,8 +223,11 @@ for m in st.session_state.messages:
 typed = st.chat_input("Ask about a project, location, amenities, payment plans, listings…")
 question = typed or pending
 if question:
-    history = [{"role": m["role"], "content": m["content"]} for m in st.session_state.messages
-               if not m.get("error")][-8:]
+    history = [
+        {"role": m["role"], "content": m["content"]}
+        for m in st.session_state.messages
+        if not m.get("error")
+    ][-8:]
     st.session_state.messages.append({"role": "user", "content": question})
     with st.chat_message("user", avatar="👤"):
         st.markdown(question)
@@ -204,5 +240,6 @@ if question:
         else:
             st.markdown(res["answer"])
             render_sources(res.get("sources", []))
-            st.session_state.messages.append({"role": "assistant", "content": res["answer"],
-                                              "sources": res.get("sources", [])})
+            st.session_state.messages.append(
+                {"role": "assistant", "content": res["answer"], "sources": res.get("sources", [])}
+            )
