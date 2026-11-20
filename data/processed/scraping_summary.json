@@ -1,30 +1,33 @@
 {
-  "run_at": "2026-11-18T15:45:53+00:00",
+  "run_at": "2026-11-20T07:22:32+00:00",
   "sources": {
     "DarGlobal": {
       "sitemap_urls_in_scope": 93,
       "snapshot_stats": {
-        "pages_seen": 0,
-        "parsed": 0,
+        "pages_seen": 20,
+        "parsed": 20,
         "skipped_challenge": 0,
         "skipped_duplicate": 0,
         "skipped_out_of_scope": 0,
         "errors": 0
       },
-      "records": 0,
-      "coverage_of_sitemap_scope": "0/93",
-      "by_page_type": {},
+      "records": 20,
+      "coverage_of_sitemap_scope": "20/93",
+      "by_page_type": {
+        "project": 18,
+        "company": 2
+      },
       "fields_present": {
-        "description": 0,
-        "location": 0,
-        "country": 0,
-        "property_type": 0,
-        "price": 0,
-        "payment_plan": 0,
+        "description": 20,
+        "location": 19,
+        "country": 20,
+        "property_type": 20,
+        "price": 18,
+        "payment_plan": 19,
         "bedrooms": 0,
         "area_sqm": 0,
-        "amenities": 0,
-        "features": 0
+        "amenities": 20,
+        "features": 20
       }
     },
     "Wasalt": {
@@ -56,10 +59,10 @@
     }
   },
   "cleaning": {
-    "input": 316,
+    "input": 336,
     "empty": 0,
     "duplicate": 0,
-    "output": 316
+    "output": 336
   },
-  "documents": 316
+  "documents": 336
 }

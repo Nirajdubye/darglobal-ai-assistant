@@ -18,9 +18,9 @@
     "amenities": [],
     "features": [],
     "specifications": {},
-    "body_text": "Wasalt public sitemap snapshot (2026-11-18): 59,998 English-language property listings (45,489 for sale, 14,509 for rent), all in Saudi Arabia.\nListings by property type and purpose:\n- apartment: 36,321 total (25,209 for sale, 11,112 for rent)\n- villa: 11,426 total (10,041 for sale, 1,385 for rent)\n- land: 5,068 total (4,808 for sale, 260 for rent)\n- floor: 5,043 total (4,158 for sale, 885 for rent)\n- building: 1,472 total (1,075 for sale, 397 for rent)\n- rest house: 332 total (194 for sale, 138 for rent)\n- room for rent: 196 total (0 for sale, 196 for rent)\n- furnished apartment: 104 total (0 for sale, 104 for rent)\n- semi furnished apartment: 22 total (0 for sale, 22 for rent)\n- duplex: 3 total (2 for sale, 1 for rent)\n- furnished villa: 3 total (0 for sale, 3 for rent)\n- furnished floor: 2 total (0 for sale, 2 for rent)\n- chalet: 2 total (0 for sale, 2 for rent)\n- room for sale: 1 total (1 for sale, 0 for rent)\n- room: 1 total (0 for sale, 1 for rent)\nTypical size (median area in sqm, using only listings whose stated area is plausible):\n- villa: median 366 sqm (based on 8,357 of 11,424 listings that state an area)\n- land: median 800 sqm (based on 5,068 of 5,068 listings that state an area)\n- building: median 800 sqm (based on 1,454 of 1,454 listings that state an area)\n- rest house: median 800 sqm (based on 332 of 332 listings that state an area)\n- furnished apartment: median 156 sqm (based on 23 of 27 listings that state an area)\n- furnished villa: median 400 sqm (based on 3 of 3 listings that state an area)\n- No reliable size figure for: apartment, floor (more than 30% of the stated areas in their URLs are implausibly large).\nApartment listings by bedroom count: 1 bed: 4,412, 2 bed: 5,912, 3 bed: 14,398, 4 bed: 6,188, 5 bed: 3,425, 6 bed: 1,230, 7 bed: 222\nMost common facing directions (villas/land/buildings): east (4,307), north (4,224), south (3,794), west (2,867), north east (438)\nNote: these are counts of listing URLs in Wasalt's public sitemap, not verified market data. Many apartment and floor URLs state areas that are far too large to be real (for example tens of thousands of sqm), so those values were excluded from the size statistics. The sitemap does not contain prices.",
+    "body_text": "Wasalt public sitemap snapshot (2026-11-20): 59,998 English-language property listings (45,489 for sale, 14,509 for rent), all in Saudi Arabia.\nListings by property type and purpose:\n- apartment: 36,321 total (25,209 for sale, 11,112 for rent)\n- villa: 11,426 total (10,041 for sale, 1,385 for rent)\n- land: 5,068 total (4,808 for sale, 260 for rent)\n- floor: 5,043 total (4,158 for sale, 885 for rent)\n- building: 1,472 total (1,075 for sale, 397 for rent)\n- rest house: 332 total (194 for sale, 138 for rent)\n- room for rent: 196 total (0 for sale, 196 for rent)\n- furnished apartment: 104 total (0 for sale, 104 for rent)\n- semi furnished apartment: 22 total (0 for sale, 22 for rent)\n- duplex: 3 total (2 for sale, 1 for rent)\n- furnished villa: 3 total (0 for sale, 3 for rent)\n- furnished floor: 2 total (0 for sale, 2 for rent)\n- chalet: 2 total (0 for sale, 2 for rent)\n- room for sale: 1 total (1 for sale, 0 for rent)\n- room: 1 total (0 for sale, 1 for rent)\nTypical size (median area in sqm, using only listings whose stated area is plausible):\n- villa: median 366 sqm (based on 8,357 of 11,424 listings that state an area)\n- land: median 800 sqm (based on 5,068 of 5,068 listings that state an area)\n- building: median 800 sqm (based on 1,454 of 1,454 listings that state an area)\n- rest house: median 800 sqm (based on 332 of 332 listings that state an area)\n- furnished apartment: median 156 sqm (based on 23 of 27 listings that state an area)\n- furnished villa: median 400 sqm (based on 3 of 3 listings that state an area)\n- No reliable size figure for: apartment, floor (more than 30% of the stated areas in their URLs are implausibly large).\nApartment listings by bedroom count: 1 bed: 4,412, 2 bed: 5,912, 3 bed: 14,398, 4 bed: 6,188, 5 bed: 3,425, 6 bed: 1,230, 7 bed: 222\nMost common facing directions (villas/land/buildings): east (4,307), north (4,224), south (3,794), west (2,867), north east (438)\nNote: these are counts of listing URLs in Wasalt's public sitemap, not verified market data. Many apartment and floor URLs state areas that are far too large to be real (for example tens of thousands of sqm), so those values were excluded from the size statistics. The sitemap does not contain prices.",
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en",
@@ -43,7 +43,7 @@
     "specifications": {},
     "body_text": "Saudi cities with dedicated Wasalt search pages, and the categories available:\n- Abha: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, floors for rent, floors for sale, lands for rent\n- Al Ahsa: apartments for rent, apartments for sale, buildings for rent, buildings for sale, duplexes for rent, duplexes for sale, farms for sale, floors for rent\n- Al Kharj: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, floors for rent, floors for sale\n- Al Khobar: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, floors for rent, floors for sale\n- Arar: apartments for sale, buildings for rent, buildings for sale, floors for sale, lands for rent, lands for sale, properties for rent, properties for sale\n- Dammam: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, floors for rent, floors for sale\n- Dhahran: apartments for rent, apartments for sale, buildings for sale, floors for rent, lands for rent, lands for sale, properties for rent, properties for sale\n- Hail: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, floors for rent, floors for sale\n- Jazan: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, floors for rent, floors for sale, lands for rent\n- Jeddah: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial lands for rent, commercial properties for rent, commercial properties for sale, duplexes for rent\n- Jubail: apartments for rent, apartments for sale, buildings for rent, buildings for sale, floors for rent, floors for sale, lands for sale, properties for rent\n- Madinah: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, duplexes for sale, floors for rent\n- Makkah: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, floors for rent, floors for sale\n- Najran: buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, lands for rent, lands for sale, properties for rent, properties for sale\n- Rabigh: apartments for rent, buildings for rent, buildings for sale, lands for rent, lands for sale, properties for rent, properties for sale, villas for sale\n- Riyadh: apartments for rent, apartments for sale, buildings for rent, buildings for sale, chalets for rent, commercial lands for rent, commercial lands for sale, commercial properties for rent\n- Sakaka: lands for sale, properties for sale, villas for sale\n- Tabuk: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, floors for sale, lands for rent\n- Taif: apartments for rent, apartments for sale, buildings for rent, buildings for sale, commercial properties for rent, commercial properties for sale, floors for rent, floors for sale\n- Yanbu: buildings for rent, lands for rent, properties for rent",
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-31206-sqm-with-3-bedrooms-5925004",
@@ -68,7 +68,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-80-sqm-with-1-bedroom-5907144",
@@ -93,7 +93,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-2715-sqm-with-2-bedrooms-5903911",
@@ -118,7 +118,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-400-sqm-with-3-bedrooms-5930811",
@@ -143,7 +143,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-14436-sqm-with-3-bedrooms-5917712",
@@ -168,7 +168,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-11305-sqm-with-3-bedrooms-5907181",
@@ -193,7 +193,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-200-sqm-with-3-bedrooms-5921348",
@@ -218,7 +218,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-1194-sqm-with-4-bedrooms-5922427",
@@ -243,7 +243,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-179-sqm-with-3-bedrooms-5874072",
@@ -268,7 +268,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-165-sqm-with-4-bedrooms-5869911",
@@ -293,7 +293,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-11677-sqm-with-3-bedrooms-5925504",
@@ -318,7 +318,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-750-sqm-5891138",
@@ -343,7 +343,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-5005-sqm-with-2-bedrooms-5920257",
@@ -368,7 +368,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-with-2-bedrooms-5823182",
@@ -393,7 +393,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-18418-sqm-with-5-bedrooms-5940466",
@@ -418,7 +418,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-450-sqm-with-4-bedrooms-5921351",
@@ -443,7 +443,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-with-3-bedrooms-5844761",
@@ -468,7 +468,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-152-sqm-with-4-bedrooms-5854469",
@@ -493,7 +493,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-with-4-bedrooms-5927282",
@@ -518,7 +518,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/apartment-108-sqm-with-3-bedrooms-5859540",
@@ -543,7 +543,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-700-sqm-facing-north-5893332",
@@ -569,7 +569,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-5999-sqm-facing-north-5919435",
@@ -595,7 +595,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-1600-sqm-facing-west-5918635",
@@ -621,7 +621,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-500-sqm-facing-east-5861887",
@@ -647,7 +647,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-588-sqm-facing-south-5850880",
@@ -673,7 +673,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-660-sqm-facing-south-5937818",
@@ -699,7 +699,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-1200-sqm-facing-north-with-4-floors-5851855",
@@ -725,7 +725,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-750-sqm-facing-north-5895766",
@@ -751,7 +751,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-facing-east-5903420",
@@ -777,7 +777,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-900-sqm-facing-south-5937827",
@@ -803,7 +803,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-517-sqm-facing-west-5874283",
@@ -829,7 +829,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-6205-sqm-facing-south-5921270",
@@ -855,7 +855,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-7075-sqm-facing-north-5890176",
@@ -881,7 +881,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-137-sqm-facing-north-5854656",
@@ -907,7 +907,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-199375-sqm-facing-east-5934870",
@@ -933,7 +933,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-1475-sqm-facing-south-5907683",
@@ -959,7 +959,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-60-sqm-facing-north-5873090",
@@ -985,7 +985,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-900-sqm-facing-north-5920012",
@@ -1011,7 +1011,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-158-sqm-facing-north-5833997",
@@ -1037,7 +1037,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/building-600-sqm-facing-north-with-3-floors-5906133",
@@ -1063,7 +1063,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/chalet-450-sqm-with-1-guest-room-with-1-bedroom-5898344",
@@ -1088,7 +1088,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/chalet-625-sqm-with-2-guest-rooms-5883315",
@@ -1113,7 +1113,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/duplex-315-sqm-facing-west-with-6-bedrooms-5927297",
@@ -1139,7 +1139,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-273-sqm-with-5-bedrooms-5881874",
@@ -1164,7 +1164,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-1491-sqm-with-5-bedrooms-5907869",
@@ -1189,7 +1189,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-460-sqm-with-4-bedrooms-5931385",
@@ -1214,7 +1214,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-360-sqm-with-5-bedrooms-5920880",
@@ -1239,7 +1239,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-1606-sqm-with-4-bedrooms-5947822",
@@ -1264,7 +1264,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-360-sqm-with-5-bedrooms-5921006",
@@ -1289,7 +1289,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-with-3-bedrooms-5911533",
@@ -1314,7 +1314,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-14382-sqm-with-5-bedrooms-5895964",
@@ -1339,7 +1339,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-170-sqm-with-3-bedrooms-5860516",
@@ -1364,7 +1364,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-16626-sqm-with-3-bedrooms-5947867",
@@ -1389,7 +1389,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-16668-sqm-with-3-bedrooms-5890957",
@@ -1414,7 +1414,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-572-sqm-with-5-bedrooms-5873116",
@@ -1439,7 +1439,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-16074-sqm-with-6-bedrooms-5914886",
@@ -1464,7 +1464,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-500-sqm-with-4-bedrooms-5914778",
@@ -1489,7 +1489,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-360-sqm-with-3-bedrooms-5893708",
@@ -1514,7 +1514,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-660-sqm-with-3-bedrooms-5929421",
@@ -1539,7 +1539,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-17012-sqm-with-3-bedrooms-5914735",
@@ -1564,7 +1564,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-23118-sqm-with-3-bedrooms-5919828",
@@ -1589,7 +1589,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-3125-sqm-with-5-bedrooms-5904265",
@@ -1614,7 +1614,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/floor-780-sqm-with-5-bedrooms-5821727",
@@ -1639,7 +1639,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-246-sqm-with-2-bedrooms-5858917",
@@ -1664,7 +1664,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-2800-sqm-5898688",
@@ -1689,7 +1689,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-2-bedrooms-5898634",
@@ -1714,7 +1714,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-179-sqm-with-4-bedrooms-5889115",
@@ -1739,7 +1739,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-1-bedroom-5892482",
@@ -1764,7 +1764,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-5-bedrooms-5916677",
@@ -1789,7 +1789,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-2-bedrooms-5915985",
@@ -1814,7 +1814,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-2-bedrooms-5890684",
@@ -1839,7 +1839,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-3-bedrooms-5875344",
@@ -1864,7 +1864,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-127-sqm-with-3-bedrooms-5874942",
@@ -1889,7 +1889,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-1-bedroom-5876607",
@@ -1914,7 +1914,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-1-bedroom-5857516",
@@ -1939,7 +1939,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-5907622",
@@ -1964,7 +1964,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-2-bedrooms-5839157",
@@ -1989,7 +1989,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-45-sqm-5899562",
@@ -2014,7 +2014,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-324-sqm-5882433",
@@ -2039,7 +2039,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-2-bedrooms-5900686",
@@ -2064,7 +2064,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-1-bedroom-5862964",
@@ -2089,7 +2089,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-with-3-bedrooms-5877899",
@@ -2114,7 +2114,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-apartment-750-sqm-with-3-bedrooms-5851503",
@@ -2139,7 +2139,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-floor-with-6-bedrooms-5916379",
@@ -2164,7 +2164,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-floor-600-sqm-5884170",
@@ -2189,7 +2189,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-villa-225-sqm-facing-east-5877834",
@@ -2215,7 +2215,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-villa-500-sqm-facing-north-5877483",
@@ -2241,7 +2241,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/furnished-villa-400-sqm-facing-east-5841897",
@@ -2267,7 +2267,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-800-sqm-facing-south-5878213",
@@ -2293,7 +2293,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-1158286-sqm-5931978",
@@ -2318,7 +2318,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-15394-sqm-facing-south-5937696",
@@ -2344,7 +2344,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-800-sqm-facing-3-5933020",
@@ -2369,7 +2369,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-1240-sqm-facing-north-5930661",
@@ -2395,7 +2395,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-600-sqm-facing-east-5921272",
@@ -2421,7 +2421,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-625-sqm-facing-south-5910575",
@@ -2447,7 +2447,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-1200-sqm-5918996",
@@ -2472,7 +2472,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-420-sqm-facing-south-5879273",
@@ -2498,7 +2498,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-625-sqm-facing-north-5932336",
@@ -2524,7 +2524,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-400-sqm-facing-west-5877114",
@@ -2550,7 +2550,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-458257-sqm-facing-3-5930850",
@@ -2575,7 +2575,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-1039-sqm-facing-south-5897422",
@@ -2601,7 +2601,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-600-sqm-facing-north-5922217",
@@ -2627,7 +2627,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-147894-sqm-5933087",
@@ -2652,7 +2652,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-600-sqm-facing-north-5922641",
@@ -2678,7 +2678,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-1647-sqm-facing-4-5920645",
@@ -2703,7 +2703,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-150562-sqm-facing-east-5879999",
@@ -2729,7 +2729,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-87872-sqm-facing-east-5927249",
@@ -2755,7 +2755,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/land-36652-sqm-facing-3-5912569",
@@ -2780,7 +2780,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-375-sqm-with-4-bedrooms-5919827",
@@ -2805,7 +2805,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-4486-sqm-with-4-bedrooms-5922627",
@@ -2830,7 +2830,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-468-sqm-with-3-bedrooms-5884652",
@@ -2855,7 +2855,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-450-sqm-with-2-bedrooms-5914224",
@@ -2880,7 +2880,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-150-sqm-with-3-bedrooms-5918719",
@@ -2905,7 +2905,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-200-sqm-with-3-bedrooms-5918703",
@@ -2930,7 +2930,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-200-sqm-with-3-bedrooms-5918715",
@@ -2955,7 +2955,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-720-sqm-with-2-bedrooms-5929519",
@@ -2980,7 +2980,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-2450-sqm-with-2-bedrooms-5930644",
@@ -3005,7 +3005,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-4425-sqm-with-2-bedrooms-5918958",
@@ -3030,7 +3030,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-450-sqm-with-3-bedrooms-5913307",
@@ -3055,7 +3055,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-36042-sqm-with-2-bedrooms-5918798",
@@ -3080,7 +3080,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-200-sqm-with-3-bedrooms-5918969",
@@ -3105,7 +3105,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-200-sqm-with-3-bedrooms-5918700",
@@ -3130,7 +3130,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-150-sqm-with-3-bedrooms-5918909",
@@ -3155,7 +3155,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-200-sqm-with-3-bedrooms-5918814",
@@ -3180,7 +3180,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-875-sqm-with-10-bedrooms-5915381",
@@ -3205,7 +3205,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-6000-sqm-with-40-bedrooms-5905710",
@@ -3230,7 +3230,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-57929-sqm-with-3-bedrooms-5914409",
@@ -3255,7 +3255,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/rest-house-28387-sqm-with-4-bedrooms-5919213",
@@ -3280,7 +3280,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/1-bedrooms-room-rent-5882192",
@@ -3305,7 +3305,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5918081",
@@ -3330,7 +3330,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5918697",
@@ -3355,7 +3355,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5871385",
@@ -3380,7 +3380,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5917799",
@@ -3405,7 +3405,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5929590",
@@ -3430,7 +3430,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5925578",
@@ -3455,7 +3455,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5915384",
@@ -3480,7 +3480,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5907180",
@@ -3505,7 +3505,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5863858",
@@ -3530,7 +3530,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5938264",
@@ -3555,7 +3555,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5931253",
@@ -3580,7 +3580,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5877113",
@@ -3605,7 +3605,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5927273",
@@ -3630,7 +3630,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5908081",
@@ -3655,7 +3655,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5918973",
@@ -3680,7 +3680,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5918947",
@@ -3705,7 +3705,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5839184",
@@ -3730,7 +3730,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5869705",
@@ -3755,7 +3755,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5916363",
@@ -3780,7 +3780,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/room-for-rent-5921163",
@@ -3805,7 +3805,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-1-bedroom-5882195",
@@ -3830,7 +3830,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-5898731",
@@ -3855,7 +3855,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-3-bedrooms-5892509",
@@ -3880,7 +3880,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-3-bedrooms-5874055",
@@ -3905,7 +3905,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-5903479",
@@ -3930,7 +3930,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-2-bedrooms-5870237",
@@ -3955,7 +3955,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-3-bedrooms-5906217",
@@ -3980,7 +3980,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-4-bedrooms-5884084",
@@ -4005,7 +4005,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-3-bedrooms-5875897",
@@ -4030,7 +4030,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-2-bedrooms-5867309",
@@ -4055,7 +4055,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-3-bedrooms-5909573",
@@ -4080,7 +4080,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-4-bedrooms-5884073",
@@ -4105,7 +4105,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-5909599",
@@ -4130,7 +4130,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-3-bedrooms-5900352",
@@ -4155,7 +4155,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-5-bedrooms-5876591",
@@ -4180,7 +4180,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-5890578",
@@ -4205,7 +4205,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-5915862",
@@ -4230,7 +4230,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-with-4-bedrooms-5892118",
@@ -4255,7 +4255,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-5892688",
@@ -4280,7 +4280,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/semi-furnished-apartment-55-sqm-5900433",
@@ -4305,7 +4305,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/sqm-land-rent-5888925",
@@ -4330,7 +4330,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-325-sqm-facing-south-with-10-bedrooms-5938204",
@@ -4356,7 +4356,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-7144-sqm-facing-west-with-6-bedrooms-5893471",
@@ -4382,7 +4382,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-315-sqm-facing-west-with-6-bedrooms-5862633",
@@ -4408,7 +4408,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-26708-sqm-facing-south-with-9-bedrooms-5918866",
@@ -4434,7 +4434,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-930-sqm-facing-south-with-20-bedrooms-5869719",
@@ -4460,7 +4460,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-44282-sqm-facing-east-with-7-bedrooms-5913231",
@@ -4486,7 +4486,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-300-sqm-facing-south-with-4-bedrooms-5919783",
@@ -4512,7 +4512,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-471-sqm-facing-north-with-6-bedrooms-5874267",
@@ -4538,7 +4538,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-3125-sqm-facing-west-with-5-bedrooms-5918750",
@@ -4564,7 +4564,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-350-sqm-facing-east-with-3-bedrooms-5907369",
@@ -4590,7 +4590,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-315-sqm-facing-north-with-8-bedrooms-5914814",
@@ -4616,7 +4616,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-350-sqm-facing-east-with-4-bedrooms-5907339",
@@ -4642,7 +4642,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-5625-sqm-facing-east-with-9-bedrooms-5931513",
@@ -4668,7 +4668,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-16357-sqm-facing-west-with-6-bedrooms-5914473",
@@ -4694,7 +4694,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-400-sqm-facing-north-with-4-bedrooms-5900047",
@@ -4720,7 +4720,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-377-sqm-facing-west-with-6-bedrooms-5885017",
@@ -4746,7 +4746,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-200-sqm-facing-east-with-9-bedrooms-5919092",
@@ -4772,7 +4772,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-630-sqm-facing-north-with-15-bedrooms-5908274",
@@ -4798,7 +4798,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-200-sqm-facing-north-with-4-bedrooms-5919735",
@@ -4824,7 +4824,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/rent/villa-195-sqm-facing-east-with-3-bedrooms-5891117",
@@ -4850,7 +4850,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-139-sqm-with-3-bedrooms-5853892",
@@ -4875,7 +4875,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-8075-sqm-with-3-bedrooms-5929711",
@@ -4900,7 +4900,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-600-sqm-with-4-bedrooms-5917534",
@@ -4925,7 +4925,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-23999-sqm-with-6-bedrooms-5912493",
@@ -4950,7 +4950,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-600-sqm-with-3-bedrooms-5899769",
@@ -4975,7 +4975,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-15936-sqm-with-4-bedrooms-5915917",
@@ -5000,7 +5000,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-with-3-bedrooms-5823068",
@@ -5025,7 +5025,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-80357-sqm-with-3-bedrooms-5895653",
@@ -5050,7 +5050,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-10264-sqm-with-3-bedrooms-5882999",
@@ -5075,7 +5075,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-9981-sqm-with-3-bedrooms-5916195",
@@ -5100,7 +5100,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-840-sqm-with-3-bedrooms-5887789",
@@ -5125,7 +5125,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-15888-sqm-with-3-bedrooms-5912122",
@@ -5150,7 +5150,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-16928-sqm-with-4-bedrooms-5934071",
@@ -5175,7 +5175,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-with-3-bedrooms-5833472",
@@ -5200,7 +5200,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-750-sqm-with-3-bedrooms-5887913",
@@ -5225,7 +5225,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-13207-sqm-with-5-bedrooms-5904474",
@@ -5250,7 +5250,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-672-sqm-with-3-bedrooms-5932027",
@@ -5275,7 +5275,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-with-4-bedrooms-5807104",
@@ -5300,7 +5300,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-16792-sqm-with-4-bedrooms-5919542",
@@ -5325,7 +5325,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/apartment-298543-sqm-with-3-bedrooms-5904041",
@@ -5350,7 +5350,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-1400-sqm-facing-north-5895737",
@@ -5376,7 +5376,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-525-sqm-5890840",
@@ -5401,7 +5401,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-910-sqm-facing-east-5888631",
@@ -5427,7 +5427,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-750-sqm-facing-north-5864836",
@@ -5453,7 +5453,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-81497-sqm-facing-south-5891703",
@@ -5479,7 +5479,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-660-sqm-facing-north-5923820",
@@ -5505,7 +5505,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-53125-sqm-5932274",
@@ -5530,7 +5530,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-690-sqm-facing-east-5848097",
@@ -5556,7 +5556,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-725-sqm-facing-east-5908311",
@@ -5582,7 +5582,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-162-sqm-facing-west-5869616",
@@ -5608,7 +5608,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-441-sqm-facing-south-5915855",
@@ -5634,7 +5634,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-6786-sqm-facing-north-5889047",
@@ -5660,7 +5660,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-44304-sqm-facing-north-5884337",
@@ -5686,7 +5686,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-864-sqm-5833517",
@@ -5711,7 +5711,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-312-sqm-facing-east-5854999",
@@ -5737,7 +5737,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-597-sqm-facing-east-5887485",
@@ -5763,7 +5763,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-7956-sqm-5890323",
@@ -5788,7 +5788,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-483-sqm-facing-east-5877023",
@@ -5814,7 +5814,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-750-sqm-facing-south-5914651",
@@ -5840,7 +5840,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/building-54569-sqm-facing-west-5923671",
@@ -5866,7 +5866,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/5-bedrooms-duplex-sale-5891944",
@@ -5891,7 +5891,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/duplex-405-sqm-facing-south-on-20m-width-street-5874985",
@@ -5918,7 +5918,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-220-sqm-with-5-bedrooms-5846589",
@@ -5943,7 +5943,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-16293-sqm-with-5-bedrooms-5885753",
@@ -5968,7 +5968,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-15599-sqm-with-3-bedrooms-5902774",
@@ -5993,7 +5993,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-250-sqm-with-3-bedrooms-5886409",
@@ -6018,7 +6018,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-18022-sqm-with-5-bedrooms-5876635",
@@ -6043,7 +6043,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-18575-sqm-with-7-bedrooms-5898499",
@@ -6068,7 +6068,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-150-sqm-with-3-bedrooms-5855432",
@@ -6093,7 +6093,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-23987-sqm-with-3-bedrooms-5878619",
@@ -6118,7 +6118,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-11704-sqm-with-3-bedrooms-5906199",
@@ -6143,7 +6143,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-175-sqm-with-3-bedrooms-5871055",
@@ -6168,7 +6168,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-18305-sqm-with-4-bedrooms-5898747",
@@ -6193,7 +6193,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-31544-sqm-with-9-bedrooms-5897194",
@@ -6218,7 +6218,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-198-sqm-with-3-bedrooms-5837923",
@@ -6243,7 +6243,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-24423-sqm-with-5-bedrooms-5890855",
@@ -6268,7 +6268,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-with-5-bedrooms-5899574",
@@ -6293,7 +6293,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-242-sqm-with-5-bedrooms-5836692",
@@ -6318,7 +6318,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-14807-sqm-with-4-bedrooms-5878052",
@@ -6343,7 +6343,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-22024-sqm-with-3-bedrooms-5809966",
@@ -6368,7 +6368,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-10726-sqm-with-4-bedrooms-5932890",
@@ -6393,7 +6393,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/floor-17714-sqm-with-3-bedrooms-5893978",
@@ -6418,7 +6418,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-1335-sqm-facing-west-on-20m-width-street-5888237",
@@ -6445,7 +6445,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-288-sqm-facing-east-on-18m-width-street-5916558",
@@ -6472,7 +6472,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-492-sqm-facing-north-on-18m-width-street-5860981",
@@ -6499,7 +6499,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-595-sqm-facing-south-east-on-20m-width-street-5865974",
@@ -6526,7 +6526,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-69805-sqm-facing-north-on-15m-width-street-5879410",
@@ -6553,7 +6553,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-875-sqm-facing-west-on-15m-width-street-5900332",
@@ -6580,7 +6580,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-630-sqm-facing-north-on-20m-width-street-5894897",
@@ -6607,7 +6607,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-625-sqm-facing-east-on-32m-width-street-5882968",
@@ -6634,7 +6634,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-40323-sqm-facing-west-on-24m-width-street-5922239",
@@ -6661,7 +6661,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-400-sqm-facing-north-on-15m-width-street-5931459",
@@ -6688,7 +6688,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-500-sqm-facing-west-on-20m-width-street-5911804",
@@ -6715,7 +6715,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-420-sqm-facing-west-on-25m-width-street-5922607",
@@ -6742,7 +6742,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-21304-sqm-facing-south-east-on-20m-width-street-5896721",
@@ -6769,7 +6769,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-350-sqm-5908034",
@@ -6794,7 +6794,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-440-sqm-facing-west-on-10m-width-street-5862978",
@@ -6821,7 +6821,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-46287-sqm-facing-north-on-25m-width-street-5882065",
@@ -6848,7 +6848,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-520-sqm-facing-west-on-6m-width-street-5915961",
@@ -6875,7 +6875,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-33716-sqm-facing-north-on-14m-width-street-5897247",
@@ -6902,7 +6902,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-27118-sqm-facing-south-on-16m-width-street-5906799",
@@ -6929,7 +6929,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/land-800-sqm-facing-west-on-40m-width-street-5914401",
@@ -6956,7 +6956,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-800-sqm-5910073",
@@ -6981,7 +6981,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-747-sqm-facing-north-on-30m-width-street-5856138",
@@ -7008,7 +7008,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-2200-sqm-facing-north-on-15m-width-street-5922624",
@@ -7035,7 +7035,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-28126-sqm-facing-west-on-15m-width-street-5918618",
@@ -7062,7 +7062,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-10872-sqm-facing-north-on-15m-width-street-5907465",
@@ -7089,7 +7089,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-600-sqm-facing-west-on-20m-width-street-5922229",
@@ -7116,7 +7116,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-115625-sqm-facing-east-on-125m-width-street-5895699",
@@ -7143,7 +7143,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-660-sqm-facing-east-on-30m-width-street-5884194",
@@ -7170,7 +7170,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-4625-sqm-facing-north-on-18m-width-street-5913018",
@@ -7197,7 +7197,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-600-sqm-facing-north-west-on-15m-width-street-5913333",
@@ -7224,7 +7224,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-62936-sqm-facing-east-on-20m-width-street-5926592",
@@ -7251,7 +7251,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-359-sqm-facing-south-on-32m-width-street-5863044",
@@ -7278,7 +7278,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-3174-sqm-facing-south-on-15m-width-street-5918547",
@@ -7305,7 +7305,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-900-sqm-facing-west-on-30m-width-street-5876169",
@@ -7332,7 +7332,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-600-sqm-facing-north-on-30m-width-street-5931412",
@@ -7359,7 +7359,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-450-sqm-facing-east-on-15m-width-street-5919361",
@@ -7386,7 +7386,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-622-sqm-facing-west-on-20m-width-street-5907505",
@@ -7413,7 +7413,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-420-sqm-facing-east-on-15m-width-street-5919862",
@@ -7440,7 +7440,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-675-sqm-facing-south-west-on-25m-width-street-5924051",
@@ -7467,7 +7467,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/rest-house-375-sqm-facing-north-east-on-15m-width-street-5920242",
@@ -7494,7 +7494,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/room-for-sale-5878989",
@@ -7519,7 +7519,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/sqm-land-sale-5883540",
@@ -7544,7 +7544,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-7455-sqm-5914883",
@@ -7569,7 +7569,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-380-sqm-facing-south-on-15m-width-street-5917842",
@@ -7596,7 +7596,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-472-sqm-facing-south-on-20m-width-street-5850113",
@@ -7623,7 +7623,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-33143-sqm-facing-east-on-20m-width-street-5928790",
@@ -7650,7 +7650,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-31875-sqm-facing-north-on-20m-width-street-5903111",
@@ -7677,7 +7677,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-300-sqm-facing-north-on-15m-width-street-5921981",
@@ -7704,7 +7704,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-200-sqm-facing-west-on-15m-width-street-5851462",
@@ -7731,7 +7731,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-500-sqm-facing-south-on-40m-width-street-5892555",
@@ -7758,7 +7758,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-387-sqm-facing-west-on-15m-width-street-5841383",
@@ -7785,7 +7785,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-23344-sqm-facing-south-on-15m-width-street-5908447",
@@ -7812,7 +7812,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-472-sqm-facing-east-on-20m-width-street-5845769",
@@ -7839,7 +7839,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-435-sqm-facing-north-on-15m-width-street-5808905",
@@ -7866,7 +7866,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-4455-sqm-facing-south-on-15m-width-street-5876770",
@@ -7893,7 +7893,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-300-sqm-facing-south-on-18m-width-street-5930527",
@@ -7920,7 +7920,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-27006-sqm-facing-south-on-20m-width-street-5909825",
@@ -7947,7 +7947,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-625-sqm-facing-south-east-on-15m-width-street-5885458",
@@ -7974,7 +7974,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-270-sqm-facing-south-east-on-20m-width-street-5857879",
@@ -8001,7 +8001,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-256-sqm-facing-south-on-25m-width-street-5856591",
@@ -8028,7 +8028,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-525-sqm-facing-east-on-20m-width-street-5922679",
@@ -8055,7 +8055,7 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   },
   {
     "url": "https://wasalt.sa/en/property/sale/villa-350-sqm-facing-west-on-15m-width-street-5904296",
@@ -8082,6 +8082,6 @@
     },
     "body_text": null,
     "extraction_method": "sitemap",
-    "extracted_at": "2026-11-18T15:45:54+00:00"
+    "extracted_at": "2026-11-20T07:22:36+00:00"
   }
 ]
