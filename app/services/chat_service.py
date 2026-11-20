@@ -13,19 +13,32 @@ from app.rag.retriever import Retriever
 logger = logging.getLogger(__name__)
 
 NO_INFO_ANSWER = (
-    "I don't have information about that in the data I collected from the public DarGlobal and Wasalt "
-    "websites, so I can't answer it reliably. Try asking about a specific DarGlobal project (for example "
-    "its location, amenities or payment plan) or about Wasalt property listings in Saudi Arabia."
+    "I do not have information about that in the collected DarGlobal or Wasalt property database. "
+    "I can help answer questions regarding DarGlobal luxury developments (such as DaVinci Tower by Pagani, "
+    "Trump Tower Dubai/Jeddah, W Residences, The Astera by Aston Martin, Tierra Viva, and AIDA Muscat) "
+    "or Wasalt property listings across Saudi Arabia."
 )
 GREETING_RE = re.compile(r"^\s*(hi|hello|hey|salam|salaam|marhaba|good (morning|afternoon|evening)|thanks?( you)?|thank you)\W*$", re.I)
 GREETING_ANSWER = (
-    "Hello! I can answer questions about DarGlobal's luxury projects and Wasalt's Saudi property listings, "
-    "using information collected from their public websites. What would you like to know?"
+    "Hello! I am your real estate AI assistant. I can answer questions about DarGlobal's luxury projects "
+    "and Wasalt property listings. What would you like to know?"
 )
 
 
 class QueryValidationError(ValueError):
     pass
+
+
+def clean_text_citations(text: str) -> str:
+    """Remove [1], [2], [1][2][5] citation numbers from text for natural readability."""
+    if not text:
+        return text
+    # Remove bracketed numbers like [1], [2], [12]
+    cleaned = re.sub(r"\[\d+\]", "", text)
+    # Fix any double spaces or spacing before punctuation caused by removal
+    cleaned = re.sub(r" +", " ", cleaned)
+    cleaned = re.sub(r" (?=[\.,:;!])", "", cleaned)
+    return cleaned.strip()
 
 
 class ChatService:
@@ -45,24 +58,20 @@ class ChatService:
         return q
 
     @staticmethod
-    def build_sources(answer: str, chunks: list[dict]) -> list[dict]:
-        """Sources come from retrieval metadata (never from LLM text), cited ones first, de-duplicated by URL."""
+    def build_sources(chunks: list[dict]) -> list[dict]:
+        """Sources come from retrieval metadata, de-duplicated by URL."""
         if not chunks:
             return []
-        cited = {int(n) for n in re.findall(r"\[(\d+)\]", answer)}
-        ordered = [c for i, c in enumerate(chunks, 1) if i in cited] + \
-                  [c for i, c in enumerate(chunks, 1) if i not in cited]
         out, seen = [], set()
-        for c in ordered:
+        for c in chunks:
             m = c.get("metadata", {})
             url = m.get("url", "#")
             if url in seen:
                 continue
             seen.add(url)
-            idx = chunks.index(c) + 1
             out.append({
                 "title": m.get("title", ""), "url": url, "source": m.get("source", ""),
-                "score": c.get("score", 0.0), "cited": idx in cited, "page_type": m.get("page_type", ""),
+                "score": c.get("score", 0.0), "page_type": m.get("page_type", ""),
                 "country": m.get("country") or None, "price": m.get("price") or None,
                 "extracted_at": m.get("extracted_at") or None,
             })
@@ -118,16 +127,16 @@ class ChatService:
         try:
             messages = build_messages(q, chunks, history, self.settings.history_turns)
             gen = self.generator.generate(messages)
+            clean_answer = clean_text_citations(gen.text)
             return {
-                "answer": gen.text,
-                "sources": self.build_sources(gen.text, chunks),
+                "answer": clean_answer,
+                "sources": self.build_sources(chunks),
                 "model": gen.model,
                 "grounded": True,
                 "latency_ms": int((time.perf_counter() - started) * 1000),
             }
         except Exception as e:
             logger.exception("LLM generation error: %s", e)
-            # Graceful summary from retrieved chunks
             titles = [c["metadata"].get("title", "") for c in chunks[:3] if c.get("metadata", {}).get("title")]
             snippet = ", ".join(titles) if titles else "luxury developments"
             fallback = (
@@ -136,7 +145,7 @@ class ChatService:
             )
             return {
                 "answer": fallback,
-                "sources": self.build_sources("", chunks),
+                "sources": self.build_sources(chunks),
                 "model": None,
                 "grounded": True,
                 "latency_ms": int((time.perf_counter() - started) * 1000),

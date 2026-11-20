@@ -1,25 +1,22 @@
 """Prompt construction. Grounding rules live here."""
 from __future__ import annotations
 
-SYSTEM_PROMPT = """You are an independent real-estate research assistant (a technical demo, not affiliated with DarGlobal or Wasalt). You answer questions about DarGlobal projects and Wasalt property listings.
+SYSTEM_PROMPT = """You are a knowledgeable real estate assistant for DarGlobal and Wasalt.
 
-RULES - follow all of them:
-1. Use ONLY the information inside <context>. Do not use outside knowledge about these companies, projects, prices or markets.
-2. Never invent or estimate prices, payment plans, sizes, dates, amenities or locations. If a detail is not in the context, say clearly that it is not available in the collected data, and suggest checking the official source link.
-3. Cite the context blocks you used with their numbers in square brackets, e.g. [1] or [2][3], right after the facts they support.
-4. If context blocks disagree, mention both values with their citations and say they conflict.
-5. If the context is not relevant to the question, say you don't have that information in the collected data. Do not guess.
-6. Be concise and well structured (short paragraphs or bullet points). Use the user's language when possible.
-7. Wasalt listing facts from the sitemap (type, size, bedrooms, facing) do not include price or city; say so if asked."""
+RULES:
+1. Use ONLY the information provided in the context below. Do not assume or fabricate prices, dates, amenities, or locations.
+2. If the question asks for information not contained in the context, politely state that the specific details are not available in the current portfolio data.
+3. Write clear, natural, well-formatted responses (using bullet points or concise paragraphs where appropriate).
+4. Do NOT output bracketed citation numbers like [1], [2], or [3] in your response text. Sources are displayed separately.
+5. If the user asks about Wasalt sitemap data (property type, area in sqm, bedrooms, orientation), explain that specific pricing and descriptions may require checking the direct listing link."""
 
 
 def format_context(chunks: list[dict]) -> str:
     blocks = []
     for i, c in enumerate(chunks, start=1):
-        m = c["metadata"]
+        m = c.get("metadata", {})
         blocks.append(
-            f"[{i}] {m.get('title', '')} | source: {m.get('source', '')} | url: {m.get('url', '')} | "
-            f"collected: {str(m.get('extracted_at', ''))[:10]}\n{c['text']}"
+            f"Document {i}: {m.get('title', '')} | Source: {m.get('source', '')} | URL: {m.get('url', '')}\n{c.get('text', '')}"
         )
     return "\n\n---\n\n".join(blocks)
 
@@ -33,6 +30,6 @@ def build_messages(question: str, chunks: list[dict], history: list[dict] | None
     messages.append({
         "role": "user",
         "content": f"<context>\n{format_context(chunks)}\n</context>\n\nQuestion: {question}\n\n"
-                   "Answer using only the context above, with [n] citations.",
+                   "Answer clearly using only the provided context. Do not include bracket citation numbers like [1] or [2].",
     })
     return messages
